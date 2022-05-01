@@ -68,12 +68,6 @@ end component;
 begin
 inta_and_rst <= inta_n and rst_n;
 
---ctrl_unit: ctrl port map ( write_n => write_en, 
---						   cs_n => cs_en, 
---						   irr_7_0_inner => irr_vect
---						   read_n=>read_n, 
---						   d_inout => d_in_out, 
---						   irq_pic=>irq_pic);
 						   
 ctrl_unit: ctrl port map(
 	write_n => write_n, 
